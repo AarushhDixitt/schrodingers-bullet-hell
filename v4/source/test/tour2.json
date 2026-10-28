@@ -1,7 +1,0 @@
-[{"wait":400,"shot":"T_title"},
- {"js":"QCAT.UI.start(1,'arcade',{diff:'graduate'}); 'p'"},{"ff":2},
- {"js":"QCAT.UI.pause(); 'p'"},{"wait":250,"shot":"T_pause"},{"js":"QCAT.UI.resume(); 'r'"},
- {"js":"QCAT.Game.lives=0; QCAT.Player.die('laser',QCAT.Player.x,QCAT.Player.y); 'd'"},{"ff":5},{"wait":400,"shot":"T_over"},
- {"js":"QCAT.UI.toTitle ? QCAT.UI.toTitle() : document.getElementById('b-title').click(); 't'"},{"wait":300},
- {"js":"QCAT.Screens.setup('campaign','scr-title'); 's'"},{"wait":250,"shot":"T_setup"}
-]

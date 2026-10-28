@@ -1,7 +1,0 @@
-[{"js":"QCAT.Settings.splits=true; QCAT.debug.start(1,'arcade'); QCAT.debug.god(); QCAT.debug.bot(); 'ok'"},
- {"ff":95},
- {"js":"const F=QCAT.Feed; F.add('Mittens collapsed','red','laser'); F.add('Perfect fold','cyan','4 cats'); F.add('Survived','cyan','P(dead) was 3/4'); F.add('Felix collapsed','red','cosmic ray'); QCAT.Game.realDt=0.3; QCAT.Game.render(); QCAT.Game.render(); JSON.stringify({w:QCAT.Game.stats.waveTimes.length, touch:document.body.classList.contains('touchplay')})"},
- {"shot":"feed_splits"},
- {"js":"QCAT.UI.pause(); QCAT.TouchLayout.open(); const b=document.getElementById('t-split'); const r=b.getBoundingClientRect(); JSON.stringify(r)"},
- {"wait":200,"shot":"btnedit_before"}
-]

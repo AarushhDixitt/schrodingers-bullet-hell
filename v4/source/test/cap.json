@@ -1,1 +1,0 @@
-[{"wait":800},{"js":"getComputedStyle(document.getElementById('figcap')).visibility"},{"js":"const r=document.querySelector('.refs'); r.open=true; 'o'"},{"wait":300},{"js":"getComputedStyle(document.getElementById('figcap')).visibility"},{"js":"document.querySelector('.refs').open=false; 'c'"},{"wait":300},{"js":"getComputedStyle(document.getElementById('figcap')).visibility"}]

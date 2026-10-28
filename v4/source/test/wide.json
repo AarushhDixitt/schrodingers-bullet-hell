@@ -1,8 +1,0 @@
-[{"wait":500,"shot":"W_title"},
- {"js":"const s=document.getElementById('scr-title'); JSON.stringify({sh:s.scrollHeight,ch:s.clientHeight, zoom: document.querySelector('#scr-title .paper').style.zoom})"},
- {"js":"QCAT.Notes.fillAll(); QCAT.LabNotes.open('scr-title','matter','enemy:electron'); 'n'"},{"wait":400,"shot":"W_notes"},
- {"js":"const p=document.getElementById('nb-pane'); JSON.stringify({sh:p.scrollHeight,ch:p.clientHeight})"},
- {"js":"QCAT.LabNotes.setVol('rec'); QCAT.LabNotes.sec='life'; QCAT.LabNotes.render(); 'r'"},{"wait":300,"shot":"W_life"},
- {"js":"QCAT.Screens.close('scr-notebook'); QCAT.Screens.setup('campaign','scr-title'); 's'"},{"wait":300,"shot":"W_setup"},
- {"js":"const s=document.getElementById('scr-setup'); JSON.stringify({sh:s.scrollHeight,ch:s.clientHeight})"}
-]

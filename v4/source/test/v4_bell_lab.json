@@ -1,8 +1,0 @@
-[{"js":"QCAT.debug.start(0,'lab'); 'lab'"},{"wait":300},
- {"js":"var b=[...document.querySelectorAll('#lab-boss button, .lab-boss button, button')].find(x=>/Local Realist/.test(x.textContent)); b ? (b.click(),'clicked') : 'nobtn'"},
- {"ff":3,"shot":"bell_lab0"},
- {"js":"QCAT.debug.bot(true); 'bot'"},
- {"ff":30,"shot":"bell_lab1"},
- {"ff":60,"shot":"bell_lab2"},
- {"js":"JSON.stringify({boss:QCAT.Game.boss&&QCAT.Game.boss.type, hp:QCAT.Game.boss&&QCAT.Game.boss.hp, grid:QCAT.Game.boss&&QCAT.Game.boss.grid})"}
-]

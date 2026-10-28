@@ -1,1 +1,0 @@
-[{"wait":400,"shot":"S_title"},{"js":"QCAT.UI.start(1,\"arcade\",{diff:\"graduate\"}); QCAT.Game.lives=0; QCAT.Player.die(\"laser\",QCAT.Player.x,QCAT.Player.y); \"d\""},{"ff":5},{"wait":400,"shot":"S_over"}]

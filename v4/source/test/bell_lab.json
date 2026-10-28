@@ -1,5 +1,0 @@
-[{"js":"QCAT.debug.start(0,'lab'); 'lab'"},{"wait":300},
- {"js":"const b=[...document.querySelectorAll('.lab-boss, button')].find(x=>/Local Realist/.test(x.textContent)); b? (b.click(),'clicked') : 'nobutton'"},
- {"wait":500,"shot":"bell1"},
- {"ff":5},{"ff":20},{"wait":200,"shot":"bell2"},
- {"js":"QCAT.debug.god(); 'g'"},{"ff":40},{"wait":200,"shot":"bell3"}]
