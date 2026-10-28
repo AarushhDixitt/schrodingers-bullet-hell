@@ -4,7 +4,7 @@ A twin-stick bullet hell where you play a cat in quantum superposition. Split in
 
 **Play it:** open `index.html` (or any `vN/index.html`) in a browser. Everything (code, fonts, sound) is in one file; there is nothing to install.
 
-> **I did not make this.** The game was designed and written by Claude (Anthropic's AI) in conversation with me. I suggested ideas and played it; Claude wrote the code, the art, the music, the physics notes and the text. I'm sharing it so people can play it.
+> **I did not make this.** The game was written by Claude (Anthropic's AI) in conversation with me. I designed, suggested ideas and played it; Claude wrote the code, the art, the music, the physics notes and the text. I'm sharing it so people can play it.
 
 ## Versions
 
