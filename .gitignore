@@ -1,0 +1,5 @@
+node_modules/
+*/source/dist/
+*/source/test/shots/
+*/source/test/harness.html
+*/source/test/bundle.js
