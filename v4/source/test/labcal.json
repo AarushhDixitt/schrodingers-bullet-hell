@@ -1,0 +1,1 @@
+[{"js":"QCAT.Calib.toggle(); QCAT.debug.start(0,\"lab\"); \"l\""},{"wait":3000},{"js":"document.querySelector(\"#lab .icon-btn\").click(); \"min\""},{"wait":400,"shot":"labcal"}]

@@ -1,0 +1,4 @@
+[{"js":"QCAT.UI.start(2,'arcade',{diff:'graduate'}); QCAT.debug.god(); 'p'"},{"ff":6},{"js":"QCAT.UI.pause(); const st=QCAT.Game.state; document.getElementById('p-photo').click(); JSON.stringify({st, on:QCAT.Photo.on, pause:document.getElementById('scr-pause').hidden})"},
+ {"wait":300,"shot":"photo1"},
+ {"js":"QCAT.Photo.zoom(1.6); QCAT.Photo.pan(-200,80); QCAT.cam.rot=0.3; 'z'"},{"wait":300,"shot":"photo2"},
+ {"js":"document.getElementById('ph-back').click(); JSON.stringify({on:QCAT.Photo.on, pause:document.getElementById('scr-pause').hidden, rot:QCAT.cam.rot})"}]

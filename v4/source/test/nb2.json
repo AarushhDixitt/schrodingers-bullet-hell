@@ -1,0 +1,6 @@
+[{"js":"QCAT.Notes.fillAll(); const S=QCAT.Save.d; S.tally={kill:{electron:812,proton:430,muon:120,photon:3,physicist:44,postdoc:5,titan:2},death:{bullet:30,laser:8,spaghettified:4},law:{tunnel:12,blackhole:9},event:{meteors:3},school:{cph:4,mw:2}}; S.life.runs=17; S.life.time=8000; S.life.kills=1500; S.life.measurements=300; S.life.survived=210; S.cats={'Mittens':{name:'Mittens',base:'Mittens',gen:1,runs:3,meas:27,coin:2,alive:false,died:{cause:'laser',at:1,wave:12}},'Mittens II':{name:'Mittens II',base:'Mittens',gen:2,runs:1,meas:5,coin:1,alive:true}}; QCAT.LabNotes.open('scr-title','matter','enemy:muon'); 'ok'"},
+ {"wait":500,"shot":"nb_obs"},
+ {"js":"QCAT.LabNotes.setVol('rec'); QCAT.LabNotes.sec='tallies'; QCAT.LabNotes.render(); 'r'"},{"wait":300,"shot":"nb_tallies"},
+ {"js":"QCAT.LabNotes.sec='life'; QCAT.LabNotes.render(); 'l'"},{"wait":300,"shot":"nb_life"},
+ {"js":"QCAT.LabNotes.sec='results'; QCAT.LabNotes.render(); 'l'"},{"wait":300,"shot":"nb_results"}
+]

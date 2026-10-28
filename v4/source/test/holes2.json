@@ -1,0 +1,3 @@
+[{"js":"QCAT.debug.start(0,'lab'); QCAT.debug.god(); const H=QCAT.Holes; H.clear(); const P=QCAT.Player; const a=H.add(P.x-420,P.y-60,8e5,{arrive:0,tag:'lab'}); a.born=1; const b=H.add(P.x+380,P.y+80,40,{arrive:0,tag:'lab'}); b.born=1; const c=H.add(P.x+150,P.y-260,1.5,{arrive:0,tag:'lab'}); c.born=1; 'ok'"},
+ {"ff":0.5},{"wait":400,"shot":"wells1"},
+ {"ff":6},{"js":"JSON.stringify(QCAT.Holes.list.map(h=>[Math.round(h.x),Math.round(h.y),+h.M.toFixed(1),Math.round(Math.hypot(h.vx,h.vy))]))"},{"wait":300,"shot":"wells2"}]
