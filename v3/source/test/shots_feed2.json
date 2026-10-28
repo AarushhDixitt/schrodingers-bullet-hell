@@ -1,0 +1,9 @@
+[{"js":"QCAT.Settings.splits=true; QCAT.debug.start(1,'arcade'); QCAT.debug.god(); QCAT.debug.bot(); 'ok'"},
+ {"ff":95},
+ {"js":"const F=QCAT.Feed; F.add('Mittens collapsed','red','laser'); F.add('Perfect fold','cyan','4 cats'); F.add('Survived','cyan','P(dead) was 3/4'); F.add('Felix collapsed','red','cosmic ray'); QCAT.Game.realDt=0.3; QCAT.Game.render(); 'ok'"},
+ {"shot":"feed_splits"},
+ {"js":"QCAT.UI.pause(); QCAT.TouchLayout.open(); const b=document.getElementById('t-fold'); const r=b.getBoundingClientRect(); const P=(t,x,y)=>b.dispatchEvent(new PointerEvent(t,{pointerId:7,pointerType:'touch',clientX:x,clientY:y,bubbles:true,cancelable:true})); const cx=r.left+r.width/2, cy=r.top+r.height/2; P('pointerdown',cx,cy); P('pointermove',cx-300,cy-120); P('pointerup',cx-300,cy-120); JSON.stringify(QCAT.Settings.btnPos)"},
+ {"wait":150,"shot":"btnedit_after"},
+ {"js":"document.getElementById('be-done').click(); QCAT.UI.resume(); QCAT.Settings.splits=false; const F=QCAT.Feed; F.add('Survived','cyan','P(dead) was 1/2'); QCAT.Game.realDt=0.3; QCAT.Game.render(); JSON.stringify({edges:[...QCAT.Input.edges], st:QCAT.Game.state})"},
+ {"shot":"feed_custom"}
+]
