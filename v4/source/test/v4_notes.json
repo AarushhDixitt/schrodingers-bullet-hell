@@ -1,0 +1,10 @@
+[{"js":"const N=QCAT.Notes; QCAT.Game.mode='arcade'; N.see('enemy:electron'); N.obs('enemy:electron','kill'); N.see('enemy:muon'); N.obs('enemy:muon','decay'); N.obs('enemy:muon','kill'); for(let i=0;i<20;i++) N.count('enemy:muon'); N.see('boss:observer'); ['gaze','rings','blink'].forEach(k=>N.obs('boss:observer',k)); N.see('enemy:twin'); N.obs('enemy:twin','share'); N.obs('enemy:twin','together'); for(let i=0;i<6;i++) N.count('enemy:twin'); N.see('law:planck'); N.see('hole:merger'); QCAT.Game.mode='attract'; 'ok'"},
+ {"js":"QCAT.LabNotes.open('scr-title','matter','enemy:muon'); 'ok'"},
+ {"wait":400,"shot":"notes_muon"},
+ {"js":"QCAT.LabNotes.cur.matter='enemy:twin'; QCAT.LabNotes.render(); 'ok'"},
+ {"wait":300,"shot":"notes_twin"},
+ {"js":"QCAT.LabNotes.sec='bosses'; QCAT.LabNotes.render(); 'ok'"},
+ {"wait":300,"shot":"notes_boss"},
+ {"js":"QCAT.Screens.close('scr-notebook'); QCAT.Guide.show('scr-title'); 'ok'"},
+ {"wait":400,"shot":"guide_idea"}
+]

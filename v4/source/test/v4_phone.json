@@ -1,0 +1,4 @@
+[{"wait":400,"shot":"ph_title"},
+ {"js":"QCAT.LabNotes.open(); 'ok'"},{"wait":400,"shot":"ph_notes"},
+ {"js":"QCAT.Save.d.cats={'Mittens':{name:'Mittens',base:'Mittens',gen:1,runs:3,meas:27,coin:2,alive:false,died:{cause:'laser',at:1,wave:12}},'Mittens II':{name:'Mittens II',base:'Mittens',gen:2,runs:1,meas:5,coin:1,alive:true},'Dr. Raman':{name:'Dr. Raman',base:'Dr. Raman',gen:1,runs:6,meas:61,coin:6,alive:true}}; QCAT.LabNotes.sec='lineage'; QCAT.LabNotes.render(); 'lin'"},{"wait":300,"shot":"ph_lineage"}
+]
