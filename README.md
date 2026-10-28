@@ -35,3 +35,4 @@ The `test/` scripts drive the game in a headless browser with Playwright (`npx p
 - Game, code, art, music and writing: Claude (Anthropic).
 - Fonts (bundled, SIL Open Font License; licence files in `source/fonts/`): STIX Two, Martian Mono, Caveat, Reenie Beanie.
 - Physics quotes and references are to the real people and papers named.
+- **Creative direction & playtesting:** Aarush Dixit (Risen, AarushhDixitt): concept, design decisions, feature ideas, testing and feedback.
