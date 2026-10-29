@@ -141,8 +141,7 @@ const UI = {
     const ch = Save.maxReached(), cleared = Object.keys(S.cleared).length > 0;
     if (best || ch > 1) { el.hidden = false; el.innerHTML = 'Best timeline <b>' + fmtInt(best) + '</b> · ' + (cleared ? '<b>box opened</b>' : 'reached chapter <b>' + ROMAN[ch] + '</b>') + ' · <b>' + Save.achCount() + '</b> of ' + ACH.length + ' publications'; }
     else el.hidden = true;
-    const open = Save.unlocked('endless');
-    for (const [id, name, ic] of [['b-endless', 'Endless', 'infinity'], ['b-programme', 'Research programme', 'flow']]) { const b = $(id); b.classList.toggle('locked', !open); b.textContent = open ? name : name + ' · locked'; withIcon(b, ic); }
+    for (const [id, name, ic, v] of [['b-endless', 'Endless', 'infinity', 'endless'], ['b-programme', 'Research programme', 'flow', 'programme']]) { const b = $(id), open = Save.unlocked(v); b.classList.toggle('locked', !open); b.textContent = open ? name : name + ' · locked'; withIcon(b, ic); }
     const pill = (id, n, ic) => { const p = $(id); p.textContent = n > 0 ? fmtInt(n) : ''; if (n > 0) p.prepend(icon(ic)); };
     pill('cites-pill', S.cites, 'cite'); pill('medal-pill', S.medals, 'medal');
     $('b-tutorial').classList.toggle('fresh', !S.tut);

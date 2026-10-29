@@ -170,7 +170,9 @@ const Save = {
   reachedFor(diff) { let m = 1; for (const k of DIFF_IDS) if (diffRank(k) >= diffRank(diff)) m = Math.max(m, this.reached(k)); return m; },
   clearedFor(diff) { return DIFF_IDS.some(k => diffRank(k) >= diffRank(diff) && this.d.cleared[k]); },
   maxReached() { return Math.max(...DIFF_IDS.map(k => this.reached(k))); },
-  unlocked(what) { const u = this.d.unlock; return what === 'nobel' ? u.nobel || this.clearedFor('reviewer2') : what === 'programme' ? u.programme || u.endless || Object.keys(this.d.beaten).length > 0 || this.clearedFor('undergrad') : u[what] || this.clearedFor('undergrad'); },
+  unlocked(what) { const u = this.d.unlock; return what === 'nobel' ? u.nobel || this.clearedFor('reviewer2') : what === 'programme' ? u.programme || this.bossOnGraduate() : u[what] || this.clearedFor('undergrad'); },
+  // a boss beaten on Graduate or harder (or, for older saves, a campaign chapter past I reached there)
+  bossOnGraduate() { const g = diffRank('graduate'), B = this.d.bossOn || {}; return DIFF_IDS.some(id => diffRank(id) >= g && (B[id] || (this.d.reached[id] || 1) >= 2 || this.d.cleared[id])); },
   diffLocked(id) { return !!DIFFS[id].locked && !this.unlocked('nobel'); },
   bestScore() { let m = 0; for (const k in this.d.rec) m = Math.max(m, this.d.rec[k].score || 0); return m; },
   award(n) { n = Math.max(0, Math.round(n)); this.d.cites += n; this.d.life.citesEarned += n; return n; },

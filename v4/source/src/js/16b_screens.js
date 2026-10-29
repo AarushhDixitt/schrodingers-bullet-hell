@@ -91,7 +91,7 @@ const Screens = {
     for (const v of ['campaign', 'programme', 'endless', 'rush']) { const t = $('mode-' + v); t.setAttribute('aria-selected', String(v === su.variant)); t.textContent = VARIANT_NAME[v] + (this.locked(v) ? ' · locked' : ''); }
     $('mode-note').textContent = su.variant === 'campaign'
       ? 'Ten experiments of four waves: three with laws of physics suspended, then a boss. Beat a boss and you choose a discovery for the rest of the run.'
-      : locked ? (su.variant === 'programme' ? 'Beat any boss once to unlock the Research programme.' : `Finish the campaign on Undergrad or harder to unlock ${VARIANT_NAME[su.variant]}. You have reached experiment ${ROMAN[Save.maxReached()]} of ${ROMAN[CHAPTERS.length]} so far.`)
+      : locked ? (su.variant === 'programme' ? 'Beat any boss on Graduate or harder to unlock the Research programme.' : `Finish the campaign on Undergrad or harder to unlock ${VARIANT_NAME[su.variant]}. You have reached experiment ${ROMAN[Save.maxReached()]} of ${ROMAN[CHAPTERS.length]} so far.`)
         : su.variant === 'programme' ? 'A new map every run. Three grant cycles of branching rooms: experiments, risky experiments, anomalies, a grant office, peer review and conferences, each cycle ending in a boss. Funding is earned and spent inside the run. Beat the third boss and your paper is published; Tenure track goes on for as long as you last.'
         : su.variant === 'endless' ? 'The waves never stop. Laws combine at random, a random boss arrives every fifth wave, and every wave is harder than the last. The background changes colour as you go.'
           : 'Every boss back to back, each with a law of physics suspended and a discovery after it. Then around again, tougher. Space weather turns up as you go.';

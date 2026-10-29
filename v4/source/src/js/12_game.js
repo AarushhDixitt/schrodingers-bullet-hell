@@ -322,7 +322,7 @@ const Game = {
     if (this.counts()) {
       Notes.obs('boss:' + b.type, 'beaten'); Notes.conclude('boss:' + b.type); Notes.flush();
       const first = !Save.d.beaten[b.type];
-      Save.d.beaten[b.type] = (Save.d.beaten[b.type] || 0) + 1;
+      Save.d.beaten[b.type] = (Save.d.beaten[b.type] || 0) + 1; (Save.d.bossOn || (Save.d.bossOn = {}))[this.diffId] = true;
       if (first) { const n = Save.award(150 * this.D.cites); this.later(1500, () => UI.note('First defeat of ' + b.bossDef.name, '+' + n + ' citations.')); }
       const r = diffRank(this.diffId); for (let k = r; k >= 0; k--) Ach.unlock('b_' + b.type + (k ? '_' + (k + 1) : ''), false, k !== r); // this volume, and every easier one
       if (this.bossHits === 0) { Ach.unlock('flawless'); Save.medal('flawless:' + b.type + ':' + this.diffId, 1, `${b.bossDef.name} beaten without being measured once (${this.D.name}).`); }
